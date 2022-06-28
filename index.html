@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google fonts cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
+    <!-- External Style sheet -->
+    <link rel="stylesheet" href="./CSS/index.css">
+    <title>BRS</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sideNav ">
+
+
+            <div
+                style="border-bottom: 3px solid#c1262b; width: 100%; display: flex; justify-content: center; align-items: center; height: 5em;">
+                <img class="sidenav_btns" src="./Images/spicejet logo.png" alt="#" />
+            </div>
+
+
+            <button class="menuBtns">
+                <div>
+                    <img class="sidenav_btns" src="./Images/sidenav/Dashboard white .png" alt="#" />
+                    <p>Dashboard</p>
+                </div>
+            </button>
+
+            <button class="menuBtns">
+                <div>
+                    <img class="sidenav_btns" src="./Images/sidenav/Crew data white.png" alt="#" />
+                    <p>Crew data</p>
+                </div>
+            </button>
+
+            <button class="menuBtns" id="ad_content">
+                <div>
+                    <img class="sidenav_btns" src="./Images/sidenav/Administration white.png" alt="#" />
+                    <p>Administration</p>
+                </div>
+            </button>
+
+
+            <button class="menuBtns">
+                <div>
+                    <img class="sidenav_btns" src="./Images/sidenav/Device managemnt white.png" alt="#" />
+                    <p style="text-align:center">Device <br> Management</p>
+                </div>
+            </button>
+
+            <button class="menuBtns">
+                <div>
+                    <img class="sidenav_btns" src="./Images/sidenav/Manage document white.png" alt="#" />
+                    <p style="text-align:center">Manage <br> Document</p>
+                </div>
+            </button>
+
+            <button class="menuBtns">
+                <div>
+                    <img class="sidenav_btns" src="./Images/sidenav/Reports white..png" alt="#" />
+                    <p>Reports</p>
+                </div>
+            </button>
+        </div>
+        <div class="main">
+
+            <div class="Center">
+                <div class="topSearch">
+                    <div class="sections">
+                        <h1>Baggage Reconciliation System</h1>
+                    </div>
+                    <!-- Search and user details section -->
+                    <div class="right_TopSearch">
+
+                        <!-- search field -->
+                        <div class="searchBar">
+                            <input id="search" type="text" placeholder="Search" />
+                            <button id="searchBtn"><img src="./Images/Search icon.png" /></button>
+                        </div>
+
+                        <!-- USER section -->
+                        <button id="Profile_btn">
+                            <div class="user">
+                                <div class="userDetail">
+                                    <h3>Anurag Nayak</h3>
+                                    <p style="color:rgb(139, 139, 139); font-size: small;">TRAINEE</p>
+                                </div>
+                                <div id="avatar">
+                                    <img style="border-radius:100%"
+                                        src="https://images.pexels.com/photos/8059123/pexels-photo-8059123.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                        alt="user-Img" height="45px" width="45px" />
+                                    <!-- <span>></span> -->
+                                </div>
+                            </div>
+                        </button>
+
+                    </div>
+                </div>
+
+
+                <!-- Filter section -->
+                <div class="filter">
+                    <div class=" sections ">
+                        <div class="filter-sec">
+                            <!-- date -->
+                            <span class="dropdown">
+                                <label for="date">Date</label>
+                                <input type="date" id="date" class="filter_inps">
+                            </span>
+
+                            <!-- zone -->
+                            <span class="dropdown">
+                                <label for="zone">Zone</label>
+                                <select class="filter_inps" id="zone">
+                                    <option>All</option>
+                                    <option value="north">North</option>
+                                    <option value="east">East</option>
+                                    <option value="west">West</option>
+                                    <option value="south">South</option>
+                                    <option value="north-east">North-East</option>
+                                </select>
+                            </span>
+
+                            <!-- station -->
+                            <span class="dropdown">
+                                <label for="station">Station</label>
+                                <select class="filter_inps" id="station">
+                                    <option>All</option>
+                                    <option value="north">Xyz</option>
+                                    <option value="east">Xyz</option>
+                                    <option value="west">Xyz</option>
+                                    <option value="south">Xyz</option>
+                                    <option value="north-east">Xyz</option>
+                                </select>
+                            </span>
+
+
+                            <!-- flight no. -->
+                            <span class="dropdown">
+                                <label for="flight_no">Flight No.</label>
+                                <select class="filter_inps" id="flight_no">
+                                    <option>All</option>
+                                    <option value="north">Xyz</option>
+                                    <option value="east">Xyz</option>
+                                    <option value="west">Xyz</option>
+                                    <option value="south">Xyz</option>
+                                    <option value="north-east">Xyz</option>
+                                </select>
+                            </span>
+
+
+                            <!-- baggage status -->
+                            <span class="dropdown">
+                                <label for="baggage_status">Baggage Status</label>
+                                <select class="filter_inps" id="baggage_status">
+                                    <option>All</option>
+                                    <option value="north">Xyz</option>
+                                    <option value="east">Xyz</option>
+                                    <option value="west">Xyz</option>
+                                    <option value="south">Xyz</option>
+                                    <option value="north-east">Xyz</option>
+                                </select>
+                            </span>
+
+
+                            <!-- passanger -->
+                            <span class="dropdown">
+                                <label for="passenger">Passanger</label>
+                                <select class="filter_inps" id="passenger">
+                                    <option>All</option>
+                                    <option value="north">Xyz</option>
+                                    <option value="east">Xyz</option>
+                                    <option value="west">Xyz</option>
+                                    <option value="south">Xyz</option>
+                                    <option value="north-east">Xyz</option>
+                                </select>
+                            </span>
+                            <button id="Filter-btn"><img src="./Images/Arrow .png" /></button>
+                            <div class="time">
+                                <div>
+                                    <h4>IST Time</h4>
+                                    <div id="MyIstClockDisplay" class="clock" onload="showIstTime()"></div>
+                                </div>
+                                <div>
+                                    <h4>UTC Time</h4>
+                                    <div id="MyUtcClockDisplay" class="clock" onload="showUtcTime()"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- filter section end -->
+
+
+
+                <!-- information section -->
+                <div class="information sections">
+
+                    <!-- Info 1 -->
+                    <div class="info info-1">
+                        <div class="info_wrapper">
+                            <div class="info_img"><img src="./Images/Information/Flight.png" /></div>
+                            <div class="info_details">
+                                <h4>310/220</h4>
+                                <p>Total Reconciled Flight/Total Oprating Flight</p>
+                            </div>
+                        </div>
+                        <div class="info_wrapper">
+                            <div class="info_img"><img src="./Images/Information/Person.png" /></div>
+                            <div class="info_details">
+                                <h4>90</h4>
+                                <p>Total BRS Non Reconciled Flight</p>
+                            </div>
+                        </div>
+                        <div class="info_wrapper">
+                            <div class="info_img"><img src="./Images/Information/Sitting person.png" /></div>
+                            <div class="info_details">
+                                <h4>12360/13262</h4>
+                                <p>Total Baggages Reconciled/Total Checking Baggages</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- info-2 -->
+                    <div class="info-2">
+                        <div class="single_info">
+                            <div class="info_wrapper">
+                                <div class="info_img">
+                                    <img src="./Images/Information/Duplicate scan person.png" />
+                                    <img src="./Images/Information/Duplicate scan.png" />
+                                </div>
+                                <div>
+                                    <h4>22</h4>
+                                    <p>Duplicate Scan </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" single_info">
+                            <div class="info_wrapper">
+                                <div class="info_img">
+                                    <img src="./Images/Information/Baggage on wrong date.png" />
+                                    <img src="./Images/Information/Cross.png" />
+
+                                </div>
+                                <div>
+                                    <h4>22</h4>
+                                    <p>Baggage On Wrong Date</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- info-3 -->
+                    <div class=" info-3">
+                        <div class="single_info">
+                            <div class="info_wrapper">
+                                <div class="info_img">
+                                    <img src="./Images/Information/Incorrect source count.png" />
+                                    <img src="./Images/Information/Cross.png" />
+                                </div>
+                                <div>
+                                    <h4>63</h4>
+                                    <p>Incorrect Source Count</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single_info">
+                            <div class="info_wrapper">
+                                <div class="info_img">
+                                    <img src="./Images/Information/Flight.png" />
+                                    <img src="./Images/Information/Cross.png" />
+
+                                </div>
+                                <div>
+                                    <h4>18</h4>
+                                    <p>Baggage On Wrong Flight</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- info-4 (statistics) -->
+
+                    <div class="statistics">
+                        <div class="functions">
+                            <h2>Statistics</h2>
+                            <select class="exports">
+                                <option>Export</option>
+                                <option>Excel</option>
+                                <option>PDF</option>
+                                <option>CSV</option>
+                            </select>
+                            <select class="Baggage_reconciled">
+                                <option>Baggage Reconciled</option>
+                                <option>XYz</option>
+                                <option>Xyz</option>
+                                <option>Xyz</option>
+                            </select>
+                            <select class="Last_week">
+                                <option>Last week</option>
+                                <option>Xyz</option>
+                                <option>Xyz</option>
+                                <option>Xyz</option>
+                            </select>
+                            <img src="./Images/Information/Statistics/calender.png" />
+                        </div>
+                        <div class="graph">
+                            <img src="./Images/Information/Statistics/Statistics.png" />
+                        </div>
+                        <div class="graph_hint">
+                            <img src="./Images/Information/Statistics/graph Hint.png" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Table section -->
+
+                <!-- Tab -->
+                <div class="Accordian sections">
+                    <div class="tab">
+                        <div class="tabs">
+                            <button class="tablink" onclick="openPage('Security', this, '')" id="defaultOpen">Addressed
+                                Security Vulnurabilities</button>
+                            <button class="tablink" onclick="openPage('Trends', this, 'blue')">Trends</button>
+                        </div>
+                        <div>
+                            <select class="Last_week tab_selects ">
+                                <option disabled>Not Loaded (+2 more)</option>
+                                <option>Xyz</option>
+                                <option>Xyz</option>
+                                <option>Xyz</option>
+                            </select>
+                            <select class="exports tab_selects">
+                                <option disabled>Export</option>
+                                <option>Excel</option>
+                                <option>PDF</option>
+                                <option>CSV</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="Security" class="tabcontent">
+
+
+
+                        <!-- collapsibles -->
+                        <div class="collapsibles">
+                            <!-- north zone -->
+
+
+
+
+                            <button style="border:1.6px solid rgb(245, 245, 23);" class="collapsible">
+                                <div class="zone_details">
+                                    <div>East</div>
+                                    <div>18</div>
+                                    <div>108/02/106</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                </div>
+                            </button>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore
+                                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    nisi ut aliquip ex ea commodo
+                                    consequat.
+                                </p>
+                            </div>
+
+                           <!-- South zone -->
+
+                            <button style="border:1.6px solid orange;" class="collapsible">
+                                <div class="zone_details">
+                                    <div>South</div>
+                                    <div>11</div>
+                                    <div>72/01/71</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                </div>
+                            </button>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore
+                                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    nisi ut aliquip ex ea commodo
+                                    consequat.
+                                </p>
+                            </div> 
+
+
+                            <!-- West Zone -->
+
+
+                            <button style="border:1.6px solid ;" class="collapsible">
+                                <div class="zone_details">
+                                    <div>West</div>
+                                    <div>07</div>
+                                    <div>48/0/48</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                </div>
+                            </button>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore
+                                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    nisi ut aliquip ex ea commodo
+                                    consequat.
+                                </p>
+                            </div> 
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore
+                                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    nisi ut aliquip ex ea commodo
+                                    consequat.</p>
+                            </div>
+
+
+
+                        
+                        </div>
+                    </div>
+                    </button>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo
+                            consequat.
+                        </p>
+                    </div> 
+                   
+
+                    <div id="Trends" class="tabcontent">
+                        <img src="./Images/Bottom Accordian/Trends graph snip.png" width="100%" />
+                    </div>
+
+
+                </div>
+
+            </div>
+
+           
+
+        </div>
+
+
+    </div>
+
+    </div>
+
+
+    <!-- hidden divs -->
+
+    <div class="administration">
+        <div class="ad_details">
+            <h4>Administration</h4>
+            <ul>
+                <a href="#">
+                    <li>Portal User</li>
+                </a>
+                <a href="#">
+                    <li>Device User</li>
+                </a>
+                <a href="#">
+                    <li>Reset Flight</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+
+    <!-- user profile -->
+    <div class="userProfile">
+        <div class="user_details">
+            <h4>Anurag Nayak</h4>
+            <p>TRAINEE</p>
+            <h4 style="color:#c1262b">500177</h4>
+            <hr>
+            <ul>
+                <a href="#">
+                    <img src="" />
+                    <li>Portal User</li>
+                </a>
+                <a href="#">
+                    <img src="" />
+                    <li>Device User</li>
+                </a>
+                <a href="#">
+                    <img src="" />
+                    <li>Reset Flight</li>
+                </a>
+            </ul>
+            <hr>
+            <div>
+                <h4>Log Out</h4>
+                <img src="" />
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="./JS/index.js"></script>
+    </div>
+</body>
+
+</html>
